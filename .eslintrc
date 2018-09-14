@@ -1,0 +1,54 @@
+{
+  "plugins": ["prettier", "flowtype"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:flowtype/recommended"
+  ],
+  "globals": {
+    "afterEach": true,
+    "beforeEach": true,
+    "describe": true,
+    "expect": true,
+    "it": true,
+    "jest": true,
+    "pit": true,
+    "__DEV__": true,
+    "Request": true,
+    "Headers": true,
+    "fetch": true,
+    "requestAnimationFrame": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ],
+    "react/jsx-indent": "off",
+    "no-console": "error",
+    "class-methods-use-this": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-unused-prop-types": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "flowtype/generic-spacing": "off",
+    "flowtype/require-valid-file-annotation": "off",
+    "flowtype/space-after-type-colon": "off",
+    "flowtype/space-before-generic-bracket": "off",
+    "flowtype/space-before-type-colon": "off",
+    "flowtype/union-intersection-spacing": "off"
+  }
+}
